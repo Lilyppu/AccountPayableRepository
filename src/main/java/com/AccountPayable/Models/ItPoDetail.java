@@ -118,7 +118,7 @@ public class ItPoDetail {
 	@Column(name="ac_user_cre", length=15)
 	private String ItPoDetAcUserCre;
 	
-	@Column(name="ac_date_upd")
+	@Column(name="ac_date_cre")
 	private Date ItPoDetAcDateCre;
 	
 	@Column(name="ac_user_upd", length=15)
