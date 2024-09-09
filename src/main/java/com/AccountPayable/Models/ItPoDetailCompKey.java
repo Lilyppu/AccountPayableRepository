@@ -21,4 +21,10 @@ public class ItPoDetailCompKey implements Serializable {
 	
 	@SuppressWarnings("unused")
 	private Integer ItPoDetPoSeqNo;
+	
+	/*public ItPoDetailCompKey(String ItPoDetPoNbr, Integer ItPoDetPoSeqNo) {
+		this.ItPoDetPoNbr = ItPoDetPoNbr;
+		this.ItPoDetPoSeqNo = ItPoDetPoSeqNo;
+	}
+	*/
 }

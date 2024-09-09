@@ -17,9 +17,8 @@ public class ServiceItPoDetail {
 		return repoItPoDetail.getListItPoDetailByPoNbr(poNbr);
 	}
 	
-	public ItPoDetail getItPoDetailById(ItPoDetailCompKey Id) {
-		Optional<ItPoDetail> itPoDetail = repoItPoDetail.findById(Id);
-		return itPoDetail.get();
+	public ItPoDetail getItPoDetailById(String ItPoDetPoNbr,Integer ItPoDetPoSeqNo) {
+		return repoItPoDetail.getItPoDetailByd(ItPoDetPoNbr, ItPoDetPoSeqNo);
 	}
 	
 }

@@ -9,5 +9,7 @@ import com.AccountPayable.Models.ItPoDetailCompKey;
 
 public interface ItPoDetailRepository extends JpaRepository<ItPoDetail, ItPoDetailCompKey> {
 	
-	public List<ItPoDetail> getListItPoDetailByPoNbr(String poNbr);
+	public List<ItPoDetail> getListItPoDetailByPoNbr(String ItPoDetPoNbr);
+	
+	public ItPoDetail getItPoDetailByd(String ItPoDetPoNbr, Integer ItPoDetPoSeqNo);
 }
