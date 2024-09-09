@@ -11,6 +11,7 @@ import com.AccountPayable.Repository.ApVoucherMasterRepository;
 
 @Service
 public class ServiceApVoucherMaster {
+	
 	@Autowired
 	ApVoucherMasterRepository repoApVoucherMaster;
 	

@@ -24,11 +24,11 @@ public class ApVoucherMaster {
 	@Column(name="vou_date")
 	private Date ApVouMstrDate;
 	
-	@Column(name="vou_remarks", length=20)
+	@Column(name="vou_remarks", length=200)
 	private String ApVouMstrRemarks;
 	
 	@Column(name="vou_it_type", length=20)
-	private String ApVouMstrTtType;
+	private String ApVouMstrItType;
 	
 	@Column(name="vou_office", length=20)
 	private String ApVouMstrOffice;

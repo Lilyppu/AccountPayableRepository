@@ -14,13 +14,13 @@ public class ControllerApVoucherMaster {
 	@Autowired
 	ServiceApVoucherMaster serviceApVouMaster;
 	
-	@GetMapping("/AccountPayable/getlistaccountpayable")
+	@GetMapping("/AccountPayable/getlistvouchermaster")
 	public List<ApVoucherMaster> getListApVoucherMaster() {
 		return serviceApVouMaster.getListApVoucherMaster();
 	}
 	
-	@GetMapping("/hello")
-	public String hello() {
-		return "Hello juga";
+	@GetMapping("/AccountPayable/getvouchermasterbyid")
+	public ApVoucherMaster getApVoucherMasterById(String vouNbr) {
+		return serviceApVouMaster.getApVoucherMasterById(vouNbr);
 	}
 }
