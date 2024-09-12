@@ -19,7 +19,7 @@ public class ControllerItPoMaster {
 		return serviceItPoMaster.getListItPoMaster();
 	}
 	
-	@GetMapping("/AccountPayable/getitpomasterbyid")
+	@GetMapping("/AccountPayable/getitpomaster")
 	public ItPoMaster getItPoMasterById(String poNbr) {
 		return serviceItPoMaster.getItPoMasterById(poNbr);
 	}

@@ -22,108 +22,108 @@ public class ItPoDetail {
 	
 	@Id
 	@Column(name="po_nbr", length=20, nullable = false)
-	private String ItPoDetPoNbr;
+	private String itPoDetPoNbr;
 	
 	@Id
 	@Column(name="po_seq_no", nullable = false)
-	private Integer ItPoDetPoSeqNo;
+	private Integer itPoDetPoSeqNo;
 	
 	@Column(name="po_it_code", length=20)
-	private String ItPoDetPoItCode;
+	private String itPoDetPoItCode;
 	
 	@Column(name="po_descr", length=200)
-	private String ItPoDetPoDescr;
+	private String itPoDetPoDescr;
 	
 	@Column(name="ac_off_dest", length=20)
-	private String ItPoDetAcOffDest;
+	private String itPoDetAcOffDest;
 	
 	@Column(name="ac_acc", length=20)
-	private String ItPoDetAcAcc;
+	private String itPoDetAcAcc;
 	
 	@Column(name="ac_sub", length=20)
-	private String ItPoDetAcSub;
+	private String itPoDetAcSub;
 	
 	@Column(name="ac_cc", length=20)
-	private String ItPoDetAcCc;
+	private String itPoDetAcCc;
 	
 	@Column(name="ac_pl", length=20)
-	private String ItPoDetAcPl;
+	private String itPoDetAcPl;
 	
 	@Column(name="ac_pj", length=20)
-	private String ItPoDetAcPj;
+	private String itPoDetAcPj;
 	
 	@Column(name="ac_db_cr", length=1)
-	private String ItPoDetAcDbCr;
+	private String itPoDetAcDbCr;
 	
 	@Column(name="po_qty_req")
-	private Integer ItPoDetPoQtyReq;
+	private Integer itPoDetPoQtyReq;
 	
 	@Column(name="po_qty_odr")
-	private Integer ItPoDetPoQtyOdr;
+	private Integer itPoDetPoQtyOdr;
 	
 	@Column(name="po_it_um", length=10)
-	private String ItPoDetPoItUm;
+	private String itPoDetPoItUm;
 	
 	@Column(name="po_price")
-	private BigDecimal ItPoDetPoPrice;
+	private BigDecimal itPoDetPoPrice;
 	
 	@Column(name="po_grs_amt")
-	private BigDecimal ItPoDetPoGrsAmt;
+	private BigDecimal itPoDetPoGrsAmt;
 	
 	@Column(name="po_disc_pct")
-	private BigDecimal ItPoDetPoDiscPct;
+	private BigDecimal itPoDetPoDiscPct;
 	
 	@Column(name="po_disc_pct_total")
-	private BigDecimal ItPoDetPoDiscPctTotal;
+	private BigDecimal itPoDetPoDiscPctTotal;
 	
 	@Column(name="po_disc_amt")
-	private BigDecimal ItPoDetPoDiscAmt;
+	private BigDecimal itPoDetPoDiscAmt;
 	
 	@Column(name="po_net_amt")
-	private BigDecimal ItPoDetPoNetAmt;
+	private BigDecimal itPoDetPoNetAmt;
 	
 	@Column(name="po_base_tax_amt")
-	private BigDecimal ItPoDetPoBaseTaxAmt;
+	private BigDecimal itPoDetPoBaseTaxAmt;
 	
 	@Column(name="po_vat_code", length=10)
-	private String ItPoDetPoVatCode;
+	private String itPoDetPoVatCode;
 	
 	@Column(name="po_vat_pct")
-	private BigDecimal ItPoDetPoVatPct;
+	private BigDecimal itPoDetPoVatPct;
 	
 	@Column(name="po_vat_amt")
-	private BigDecimal ItPoDetPoVatAmt;
+	private BigDecimal itPoDetPoVatAmt;
 	
 	@Column(name="po_tax_code", length=10)
-	private String ItPoDetPoTaxCode;
+	private String itPoDetPoTaxCode;
 	
 	@Column(name="po_tax_pct")
-	private BigDecimal ItPoDetPoTaxPct;
+	private BigDecimal itPoDetPoTaxPct;
 	
 	@Column(name="po_tax_amt")
-	private BigDecimal ItPoDetPoTaxAmt;
+	private BigDecimal itPoDetPoTaxAmt;
 	
 	@Column(name="po_net_aft_tax")
-	private BigDecimal ItPoDetPoNetAftTax;
+	private BigDecimal itPoDetPoNetAftTax;
 	
 	@Column(name="po_qty_rcv")
-	private Integer ItPoDetPoQtyRcv;
+	private Integer itPoDetPoQtyRcv;
 	
 	@Column(name="po_qty_ret")
-	private Integer ItPoDetPoQtyRet;
+	private Integer itPoDetPoQtyRet;
 	
 	@Column(name="ac_status", length=2)
-	private String ItPoDetAcStatus;
+	private String itPoDetAcStatus;
 	
 	@Column(name="ac_user_cre", length=15)
-	private String ItPoDetAcUserCre;
+	private String itPoDetAcUserCre;
 	
 	@Column(name="ac_date_cre")
-	private Date ItPoDetAcDateCre;
+	private Date itPoDetAcDateCre;
 	
 	@Column(name="ac_user_upd", length=15)
-	private String ItPoDetAcUserUpd;
+	private String itPoDetAcUserUpd;
 	
 	@Column(name="ac_date_upd")
-	private Date ItPoDetAcDateUpd;
+	private Date itPoDetAcDateUpd;
 }

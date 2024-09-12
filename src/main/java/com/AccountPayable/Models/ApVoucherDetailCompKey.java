@@ -9,17 +9,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class ItPoDetailCompKey implements Serializable {
-	
+public class ApVoucherDetailCompKey  implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
 	@SuppressWarnings("unused")
-	private String itPoDetPoNbr;
+	private String apVouDetVouNbr;
 	
 	@SuppressWarnings("unused")
-	private Integer itPoDetPoSeqNo;
-	
+	private Integer apVouDetVouSeqNo;
 }
