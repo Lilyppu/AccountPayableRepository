@@ -19,8 +19,18 @@ public class ServiceItPoMaster {
 		return repoItPoMaster.findAll();
 	}
 	
-	public ItPoMaster getItPoMasterById(String poNbr) {
-		Optional<ItPoMaster> itPoMaster = repoItPoMaster.findById(poNbr);
+	public ItPoMaster getItPoMasterById(String itPoMstrPoNbr) {
+		Optional<ItPoMaster> itPoMaster = repoItPoMaster.findById(itPoMstrPoNbr);
 		return itPoMaster.get();
+	}
+	
+	public String saveUpdatePoMaster(ItPoMaster itPoMaster) {
+		repoItPoMaster.save(itPoMaster);
+		return "Save Successfully";
+	}
+	
+	public String deletePoMaster(String itPoMstrPoNbr) {
+		repoItPoMaster.deleteById(itPoMstrPoNbr);
+		return "Delete Successfully";
 	}
 }

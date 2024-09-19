@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.AccountPayable.Models.ItPoMaster;
@@ -20,7 +22,17 @@ public class ControllerItPoMaster {
 	}
 	
 	@GetMapping("/AccountPayable/getitpomaster")
-	public ItPoMaster getItPoMasterById(String poNbr) {
-		return serviceItPoMaster.getItPoMasterById(poNbr);
+	public ItPoMaster getItPoMasterById(String itPoMstrPoNbr) {
+		return serviceItPoMaster.getItPoMasterById(itPoMstrPoNbr);
+	}
+	
+	@PostMapping("/AccountPayable/insertupdatepomaster")
+	public String savePoMaster(@RequestBody ItPoMaster itPoMaster) {
+		return serviceItPoMaster.saveUpdatePoMaster(itPoMaster);
+	}
+	
+	@PostMapping("/AccountPayable/deletepomaster")
+	public String deletePoMaster(String itPoMstrPoNbr) {
+		return serviceItPoMaster.deletePoMaster(itPoMstrPoNbr);
 	}
 }
