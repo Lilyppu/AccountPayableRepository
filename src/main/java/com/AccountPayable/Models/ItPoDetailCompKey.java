@@ -11,9 +11,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class ItPoDetailCompKey implements Serializable {
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@SuppressWarnings("unused")
@@ -22,4 +19,8 @@ public class ItPoDetailCompKey implements Serializable {
 	@SuppressWarnings("unused")
 	private Integer itPoDetPoSeqNo;
 	
+	/*public ItPoDetailCompKey(String itPoDetPoNbr, Integer itPoDetPoSeqNo) {
+		this.itPoDetPoNbr = itPoDetPoNbr;
+		this.itPoDetPoSeqNo = itPoDetPoSeqNo;
+	}*/
 }
