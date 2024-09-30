@@ -3,10 +3,14 @@ package com.AccountPayable.Models;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +25,9 @@ public class ItPoMaster {
 	@Column(name="po_nbr", length=20, nullable = false)
 	private String itPoMstrPoNbr;
 	
+	@Temporal(TemporalType.DATE)
 	@Column(name="po_date")
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private Date itPoMstrPoDate;
 	
 	@Column(name="po_remarks", length=200)
@@ -93,7 +99,9 @@ public class ItPoMaster {
 	@Column(name="po_approve_id", length=20)
 	private String itPoMstrPoApproveId;
 	
+	@Temporal(TemporalType.DATE)
 	@Column(name="po_approve_date")
+	@JsonFormat(pattern = "dd/MM/yyyy")
 	private Date itPoMstrPoApproveDate; 
 	
 	@Column(name="po_approve_stat", length=2)

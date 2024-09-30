@@ -34,4 +34,8 @@ public class ServiceItPoDetail {
 		repoItPoDetail.deletePoDetailById(itPoDetPoNbr, itPoDetPoSeqNo);
 		return "Delete Successfully";
 	}
+	
+	public Integer getMaxSeqPoDetail(String po_nbr) {
+		return repoItPoDetail.getMaxSeqPoDetail(po_nbr);
+	}
 }

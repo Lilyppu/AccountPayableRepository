@@ -27,7 +27,7 @@ public class ControllerItPoDetail {
 		return serviceItPoDetail.getListItPoDetailByPoNbr(itPoDetPoNbr);
 	}
 	
-	@GetMapping("/AccountPayable/getitpodetail")
+	@GetMapping("/AccountPayable/getitpodetailbyid")
 	public ItPoDetail getItPoDetailById(String itPoDetPoNbr, Integer itPoDetPoSeqNo) {
 		return serviceItPoDetail.getListItPoDetailById(itPoDetPoNbr, itPoDetPoSeqNo);
 	}
@@ -41,5 +41,10 @@ public class ControllerItPoDetail {
 	public String deletePoDetail(String itPoDetPoNbr, Integer itPoDetPoSeqNo) {
 		serviceItPoDetail.deletePoDetail(itPoDetPoNbr, itPoDetPoSeqNo);
 		return "Delete Successfully";
+	}
+	
+	@GetMapping("/AccountPayable/getmaxseqpodetail")
+	public Integer getMaxSeqNoPoDetail(String itPoDetPoNbr) {
+		return serviceItPoDetail.getMaxSeqPoDetail(itPoDetPoNbr);
 	}
 }

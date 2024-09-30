@@ -24,4 +24,7 @@ public interface ItPoDetailRepository extends JpaRepository<ItPoDetail, ItPoDeta
 	@Modifying
 	@Query(value = "DELETE FROM it_po_det p WHERE p.po_nbr = ?1 AND p.po_seq_no = ?2", nativeQuery = true)
     int deletePoDetailById(String po_nbr, Integer seq_no);
+	
+	@Query(value = "SELECT MAX(po_seq_no) FROM it_po_det p WHERE p.po_nbr = ?1 ", nativeQuery = true)
+	public Integer getMaxSeqPoDetail(String po_nbr);
 }
