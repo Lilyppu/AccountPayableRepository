@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 public class Supplier {
 
 	@Id
-	@Column(name="po_nbr", length=15, nullable = false)
+	@Column(name="sup_code", length=15, nullable = false)
 	private String supCode;
 	
 	@Column(name="sup_name", length=80)
@@ -29,7 +29,7 @@ public class Supplier {
 	private String supAlias;
 	
 	@Column(name="sup_hutang")
-	private BigDecimal sup_hutang;
+	private BigDecimal supHutang;
 	
 	@Column(name="sup_bank", length=60)
 	private String supBank;
