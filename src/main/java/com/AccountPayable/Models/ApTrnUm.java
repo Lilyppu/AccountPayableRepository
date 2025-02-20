@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
@@ -20,7 +21,8 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "ap_trn_um")
 public class ApTrnUm {
-
+    
+	@Id
 	@Column(name="vou_ad_code", length=20)
 	private String apTrnUmVouAdCode;
 	
